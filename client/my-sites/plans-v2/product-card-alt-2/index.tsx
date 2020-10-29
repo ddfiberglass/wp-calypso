@@ -106,6 +106,7 @@ const ProductCardAltWrapper: FunctionComponent< ProductCardProps > = ( {
 			buttonLabel={ buttonLabel }
 			buttonPrimary={ ! ( isOwned || isItemPlanFeature ) }
 			onButtonClick={ () => onClick( item, isUpgradeableToYearly, purchase ) }
+			onSlideOutClick={ onClick }
 			features={ item.features }
 			searchRecordsDetails={
 				showRecordsDetails && <RecordsDetailsAlt productSlug={ item.productSlug } />
